@@ -22,7 +22,7 @@ class WePayAPI(object):
         if production:
             self.wepay_url = "https://www.wepay.com/v2"
         else:
-            self.wepay_url = "https://stage.wepay.com/v2"
+            self.wepay_url = "https://stage.wepayapi.com/v2"
 
     def call(self, uri, params={}, token=None):
         """Calls wepay.com/v2/{uri} with {params} and returns the json
